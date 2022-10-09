@@ -7,7 +7,7 @@ const router = useRouter();
 const blogID = router.query.blogid;
 
   return (
-    <div>Blog id {blogID}</div>
+    <div><h1>Blog id:{blogID}</h1></div>
   )
 }
 
