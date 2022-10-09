@@ -1,15 +1,27 @@
+import Link from 'next/link';
 import React from 'react'
 
-function index() {
+function Blogs({blogid=7}) {
   return (
     <div>
-        <h1>blog 1</h1>
-        <h1>blog 2</h1>
-        <h1>blog 3</h1>
-        <h1>blog 4</h1>
-        <h1>blog 5</h1>
+        <Link href="/blogs/1">
+                <a>
+                    <h1>Blog no- 1</h1>
+                </a>
+        </Link>
+        <Link href={`/blogs/2`}>
+                <a>
+                    <h1>Blog no 2</h1>
+                </a>
+        </Link>
+        <Link href={`/blogs/${blogid}`}>
+                <a>
+                    <h1>Blog any no or page number 7</h1>
+                </a>
+        </Link>
+
     </div>
   )
 }
 
-export default index;
+export default Blogs;
