@@ -8,7 +8,7 @@ export default function Home() {
   }
   return (
     <div >
-      <h1>Bismillah Hirrahmanir Rahim.</h1>
+      <h1>Home Page.</h1>
       
       <Link href="/about">
         <a>
