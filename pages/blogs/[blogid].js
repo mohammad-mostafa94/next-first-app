@@ -1,8 +1,13 @@
-import React from 'react'
+import { useRouter } from 'next/router';
+
 
 function BlogDetails() {
+const router = useRouter();
+
+const blogID = router.query.blogid;
+
   return (
-    <div>BlogDetails</div>
+    <div>Blog id {blogID}</div>
   )
 }
 
