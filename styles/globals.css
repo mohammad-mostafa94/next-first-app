@@ -24,3 +24,10 @@ a {
     background: black;
   }
 }
+
+.footerClass{
+  background-color:aqua;
+}
+.headerClass{
+  background-color: aqua;
+}

@@ -2,14 +2,14 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 function SingleUser() {
-
-    const {id} = useRouter().query;
-    const [user , setUser] = useState([]);
+    const { id } = useRouter().query;
+    const [user, setUser] = useState([]);
+    console.log(useRouter().query);
 
     useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-    .then((res) => res.json())
-    .then((data) =>setUser(data))
+        fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+            .then((res) => res.json())
+            .then((data) => setUser(data))
     }, [id]);
 
     return (
